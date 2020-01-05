@@ -20,6 +20,10 @@
     <!-- LIGHT BOX -->
     <link href="css/lightbox.css" rel="stylesheet" />
 
+    <!-- carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+
     <!-- Main CSS -->
     <link rel="stylesheet" href="./css/index.css">
 
@@ -27,7 +31,7 @@
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="./js/jquery.countup.js"></script>
-
+    <script src="js/owl.carousel.min.js"></script>
 
 </head>
 
@@ -199,21 +203,73 @@
                 </div>
                 <div class="team__detail">
                     <h3>John Simon</h3>
-                    <p>Cake Maker</p>    
+                    <p>Cake Maker</p>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, eveniet?</p>
                     <i class="fab fa-facebook-f"></i><i class="fab fa-google-plus-g"></i><i class="fab fa-twitter"></i>
                 </div>
             </div>
-            <div class="team__items">
+            <div class="team__items team__items2">
                 <img src="img/t2.jpg">
+                <div class="team__text">
+                    <h3>John Simon</h3>
+                    <p>Cake Maker</p>
+                </div>
+                <div class="team__detail">
+                    <h3>John Simon</h3>
+                    <p>Cake Maker</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, eveniet?</p>
+                    <i class="fab fa-facebook-f"></i><i class="fab fa-google-plus-g"></i><i class="fab fa-twitter"></i>
+                </div>
             </div>
-            <div class="team__items"><img src="img/t3.jpg"></div>
-            <div class="team__items"><img src="img/t4.jpg"></div>
+            <div class="team__items team__items3">
+                <img src="img/t3.jpg">
+                <div class="team__text">
+                    <h3>John Simon</h3>
+                    <p>Cake Maker</p>
+                </div>
+                <div class="team__detail">
+                    <h3>John Simon</h3>
+                    <p>Cake Maker</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, eveniet?</p>
+                    <i class="fab fa-facebook-f"></i><i class="fab fa-google-plus-g"></i><i class="fab fa-twitter"></i>
+                </div>
+            </div>
+            <div class="team__items team__items4">
+                <img src="img/t4.jpg">
+                <div class="team__text">
+                    <h3>John Simon</h3>
+                    <p>Cake Maker</p>
+                </div>
+                <div class="team__detail">
+                    <h3>John Simon</h3>
+                    <p>Cake Maker</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, eveniet?</p>
+                    <i class="fab fa-facebook-f"></i><i class="fab fa-google-plus-g"></i><i class="fab fa-twitter"></i>
+                </div>
+            </div>
             <div class="team__items"><img src="img/t3.jpg"></div>
             <div class="team__items"><img src="img/t4.jpg"></div>
         </div>
     </section>
-    <section class="tes"></section>
+    <section class="tes">
+        <h3>TESTIMONIALS</h3>
+        <div class="tes_content">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <p><i class="fa fa-quote-left"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel minima doloribus voluptate ea eveniet modi earum, dignissimos dolorum repudiandae fugit.<i class="fa fa-quote-right"></i></p>
+                    <p>CHENG</p>
+                </div>
+                <div class="item">
+                    <p><i class="fa fa-quote-left"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel minima doloribus voluptate ea eveniet modi earum, dignissimos dolorum repudiandae fugit.<i class="fa fa-quote-right"></i></p>
+                    <p>CHENG</p>
+                </div>
+                <div class="item">
+                    <p><i class="fa fa-quote-left"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel minima doloribus voluptate ea eveniet modi earum, dignissimos dolorum repudiandae fugit.<i class="fa fa-quote-right"></i></p>
+                    <p>CHENG</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="contact"></section>
     <footer></footer>
 
@@ -224,7 +280,28 @@
             'delay': 10
         });
     </script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            autoplay:true,
+            autoplayTimeout:500,
+            nav: false,
+            responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+        })
+    </script>
     <script src="./js/lightbox.js"></script>
+
 
 </body>
 

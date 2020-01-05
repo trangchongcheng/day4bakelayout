@@ -1,327 +1,407 @@
 /* GLOBAL */
-*{
-    box-sizing: border-box;
-    margin:0;
-    padding: 0;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 header, section, footer, aside, nav, main, article, figure {
-    display: block;
-  }
+  display: block;
+}
 
-  html,body{
-    font-family: 'Montserrat', sans-serif;
-    /* font-size: 18px; */
-    /*khong bao thi 1rem = 16px */
-  }
+html, body {
+  font-family: 'Montserrat', sans-serif;
+  /* font-size: 18px; */
+  /*khong bao thi 1rem = 16px */
+}
 
-  /* HEADER */
+/* HEADER */
 
-  header{
-    background-color: #4e2a84;
-    padding: 20px 0;
-  }
-  .header__content ul{
-    list-style: none;
-  }
-  .header__content ul li{
-    display: inline;
-    margin: 0 10px;
-  }
-  .header__content ul li a{
-    text-decoration: none;
-    color: white;
-  }
+header {
+  background-color: #4e2a84;
+  padding: 20px 0;
+}
 
-  .header__content p{
-    color: white;
-    /* font-size: 36px; */
-    /* 1rem = 18px */
-    font-size:2rem ;
-  }
-  .header__content{
-    display: flex;
-    justify-content:space-around;
-    align-items:center ;
-    width: 70%;
-    margin: 0 auto;
-  }
+.header__content ul {
+  list-style: none;
+}
 
-  /* CAROUSEL */
-  .carousel{
-    background-image: url('../img/b3.jpg');
+.header__content ul li {
+  display: inline;
+  margin: 0 10px;
+}
 
-    height: 600px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.header__content ul li a {
+  text-decoration: none;
+  color: white;
+}
 
-    /* chỉ ap dung khi flex co 1 thẻ con */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .carousel__content{
-    color: white;
-    text-align: center;
-  }
-  /* Intro */
+.header__content p {
+  color: white;
+  /* font-size: 36px; */
+  /* 1rem = 18px */
+  font-size: 2rem;
+}
 
-  .intro{
-    display: grid;
-    /* grid-template-columns: 25% 25% 25% 25%; */
-    /* grid-template-columns: repeat(4,25%); */
-    grid-template-columns: repeat(4,1fr);
-  }
-  .intro__ab1{
-    /* grid-column: 2 / 4; */
-    grid-column: 2 / span 2;
-  }
-  .intro__best{
-    grid-column: 1 / 3;
-  }
-  .intro__ab4{
-    grid-column: 3 / span 2;
-  }
-  .intro__items img{
-    width: 100%;
-    display: block;
-  }
+.header__content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+}
 
+/* CAROUSEL */
 
-  /* Number */
+.carousel {
+  background-image: url('../img/b3.jpg');
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* chỉ ap dung khi flex co 1 thẻ con */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .number{
-    display: flex;
-    /* Tất cả thẻ con đều cách đều
+.carousel__content {
+  color: white;
+  text-align: center;
+}
+
+/* Intro */
+
+.intro {
+  display: grid;
+  /* grid-template-columns: 25% 25% 25% 25%; */
+  /* grid-template-columns: repeat(4,25%); */
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.intro__ab1 {
+  /* grid-column: 2 / 4; */
+  grid-column: 2 / span 2;
+}
+
+.intro__best {
+  grid-column: 1 / 3;
+}
+
+.intro__ab4 {
+  grid-column: 3 / span 2;
+}
+
+.intro__items img {
+  width: 100%;
+  display: block;
+}
+
+/* Number */
+
+.number {
+  display: flex;
+  /* Tất cả thẻ con đều cách đều
     space-between đầu và cuối cách đều , giữa cách đều
      */
-    justify-content:space-around;
-    /* align-items:center ; */
-    width: 80%;
-    margin: 0 auto;
-    padding: 50px 0;
-  }
-  .number_items{
-    /* background-color: #000; */
-  }
+  justify-content: space-around;
+  /* align-items:center ; */
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
 
-  /* Services */
-  .services{
-    background-image: url(../img/s1.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    /* height: 500px; */
-  }
-  .services h2{
-    text-align: center;
-  }
-  .service__content{
-    text-align: center;
-    display: flex;
-    padding: 50px 0;
-    margin: 0 auto;
-    width: 80%;
-   
-  }
-  .services_items i{
-    font-size: 3.5rem;
-    margin: 1rem;
-    color: #604291;
-    background-color:#fff;
-    border-radius: 50%;
-    height: 100px;
-    width:100px;
-    /* Canh giua, Ap dung khi text chi co 1 dong */
-    line-height: 100px;
-    border: 1px #4e2a84 solid;
-    /* transition-property: color;
+.number_items {
+  /* background-color: #000; */
+}
+
+/* Services */
+
+.services {
+  background-image: url(../img/s1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* height: 500px; */
+}
+
+.services h2 {
+  text-align: center;
+}
+
+.service__content {
+  text-align: center;
+  display: flex;
+  padding: 50px 0;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.services_items i {
+  font-size: 3.5rem;
+  margin: 1rem;
+  color: #604291;
+  background-color: #fff;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  /* Canh giua, Ap dung khi text chi co 1 dong */
+  line-height: 100px;
+  border: 1px #4e2a84 solid;
+  /* transition-property: color;
     transition-delay: 200ms;
     transition-duration: 500ms;
     /* Hieu ung chuyen canh */
-    /* transition-timing-function: linear;  */
-    transition: all 400ms  linear;
-  }
+  /* transition-timing-function: linear;  */
+  transition: all 400ms linear;
+}
 
-  .services_items:hover i{
-    color: #FF0D83;
-  }
-  .service__content button{
-    background-color: #FF0D83;
-    padding: 10px;
-    border: 2px #fff solid;
-    border-radius: 5px;
-    color: #fff;
-    margin: 10px;
-  }
-  .service__content button:hover{
-    border: 2px #FF0D83 solid;
-    background-color: #fff;
-    color: #FF0D83;
-  }
+.services_items:hover i {
+  color: #FF0D83;
+}
 
-  /* Gallery */
+.service__content button {
+  background-color: #FF0D83;
+  padding: 10px;
+  border: 2px #fff solid;
+  border-radius: 5px;
+  color: #fff;
+  margin: 10px;
+}
 
-  .gallery__content{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    /* Khoang cach giua cac item */
-    grid-gap:20px;
-    padding: 0 20px;
+.service__content button:hover {
+  border: 2px #FF0D83 solid;
+  background-color: #fff;
+  color: #FF0D83;
+}
 
-  }
-.gallery h2{
+/* Gallery */
+
+.gallery__content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* Khoang cach giua cac item */
+  grid-gap: 20px;
+  padding: 0 20px;
+}
+
+.gallery h2 {
   padding: 20px;
   text-align: center;
 }
-  .gallery__g1 {
-    grid-column: 1 / span 2;
-  }
-  .gallery__g6{
-    grid-column: 3 / span 2;
-  }
-  .gallery__items img{
-    width: 100%;
-    display: block;
-    height: 100%;
-  }
-  .gallery__items {
-    position: relative;
-  }
-  .gallery__text{
-    position: absolute;
-    width: 100%;
-    height:100%;
-    top: 0px;
-    left: 0px;
-    background-color: rgba(48, 132, 163, 0.24);
-    color: #fff;
-    text-align: right;
-    padding: 30px;
-  }
-  .gallery__text p{
-    position: absolute;
-    width: 100%;
-    bottom:30px;
-    right:30px;
-    /* left: 0px; */
-    /* background-color: rgba(48, 132, 163, 0.24); */
-    color: #fff;
-    text-align: end;
-  }
-  /* Display:none khong tac dung voi transition */
-  .gallery__text h3{
-    font-weight: 600;
-    transform: translateY(100px);
-    transition: all 0.5s;
 
-  }
-  .gallery__text p{
-    transform: translateY(100px);
-    transition: all 0.5s; 
+.gallery__g1 {
+  grid-column: 1 / span 2;
+}
 
-  }
-  .gallery__items:hover h3{
-    transform: translateY(0);
-  }
-  .gallery__items:hover p{
-    transform: translateY(0px);
-  }
-  .gallery__items:hover h3::after{
-    opacity: 1;
-    transition: all 0.5;
-    transform: translateY(0);
-  }
+.gallery__g6 {
+  grid-column: 3 / span 2;
+}
 
-  .gallery__text h3 span{
-    color:#fff;
-    font-weight: 400;
-  }
+.gallery__items img {
+  width: 100%;
+  display: block;
+  height: 100%;
+}
 
-  .gallery__text h3::before{
-    content:"";
-  }
-  .gallery__text h3::after{
-    content:"";
-    width: 100%;
-    height: 3px;
-    background-color: #fff;
-    display: block;
-    margin-top: 20px;
-    opacity: 0;
-    transform: translateY(50px);
-  }
- 
-  /* TEAM */
-  .team{
-    background-color: #604291;
-    margin:40px 0px;
-  }
-  .team h2{
-    padding: 20px;
-    color: #fff;
-    text-align: center;
-  }
-  .team__content{
+.gallery__items {
+  position: relative;
+}
+
+.gallery__text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(48, 132, 163, 0.24);
+  color: #fff;
+  text-align: right;
+  padding: 30px;
+}
+
+.gallery__text p {
+  position: absolute;
+  width: 100%;
+  bottom: 30px;
+  right: 30px;
+  /* left: 0px; */
+  /* background-color: rgba(48, 132, 163, 0.24); */
+  color: #fff;
+  text-align: end;
+}
+
+/* Display:none khong tac dung voi transition */
+
+.gallery__text h3 {
+  font-weight: 600;
+  transform: translateY(100px);
+  transition: all 0.5s;
+}
+
+.gallery__text p {
+  transform: translateY(100px);
+  transition: all 0.5s;
+}
+
+.gallery__items:hover h3 {
+  transform: translateY(0);
+}
+
+.gallery__items:hover p {
+  transform: translateY(0px);
+}
+
+.gallery__items:hover h3::after {
+  opacity: 1;
+  transition: all 0.5;
+  transform: translateY(0);
+}
+
+.gallery__text h3 span {
+  color: #fff;
+  font-weight: 400;
+}
+
+.gallery__text h3::before {
+  content: "";
+}
+
+.gallery__text h3::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  display: block;
+  margin-top: 20px;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+/* TEAM */
+
+.team {
+  background-color: #604291;
+  margin: 40px 0px;
+}
+
+.team h2 {
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.team__content {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   width: 80%;
   margin: 0 auto;
   grid-gap: 30px;
-  }
-  .team__items img{
-    display: block;
-    width: 100%;
-  }
-  .team__items {
-    position: relative;
-  }
-  .team__text{
-    background-color:#FF0D83 ;
-    /* Lam mat height va width */
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    color: #fff;
-    padding: 15px 15px;
-  }
-  .team__detail{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0px;
-    bottom: 0px;
-    color: azure;
-    padding: 100px 50px;
-    background-color:rgba(2, 2, 2, 0.834);
-    line-height: 25px;
-    opacity: 0;
-  }
-  .team__detail h3{
-    color: #FF0D83;
-  }
-  .team__items:hover .team__detail{
-    opacity: 1;
-    transition: all 0.7s;
-  }
-  .team__items:hover .team__text{
-    opacity: 0;
-  }
-  .team__detail i{
-    height: 37px;
-    width:37px;
-    border: 0.5px solid;
-    line-height: 35px;
-    text-align: center;
-    margin: 5px;
-  }
+}
 
-  .team__detail i:hover{
+.team__items img {
+  display: block;
+  width: 100%;
+}
+
+.team__items {
+  position: relative;
+  /* Tu dong an khi ra khoi the cha */
+  /* overflow: hidden; */
+}
+
+.team__text {
+  background-color: #FF0D83;
+  /* Lam mat height va width */
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  color: #fff;
+  padding: 15px 15px;
+}
+
+.team__detail {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  bottom: 0px;
+  color: azure;
+  padding: 100px 50px;
+  background-color: rgba(2, 2, 2, 0.834);
+  line-height: 25px;
+  opacity: 0;
+}
+
+.team__detail h3 {
+  color: #FF0D83;
+}
+
+.team__items:hover .team__detail {
+  opacity: 1;
+  transition: all 0.7s;
+}
+
+.team__items:hover .team__text {
+  opacity: 0;
+}
+
+.team__detail i {
+  height: 37px;
+  width: 37px;
+  border: 0.5px solid;
+  line-height: 35px;
+  text-align: center;
+  margin: 5px;
+}
+
+.team__detail i:hover {
   color: #FF0D83;
   border: 0.5px solid #FF0D83;
   transition: all 0.8s;
   opacity: 0.5;
 }
 
+.team__items2 .team__detail {
+  opacity: 1;
+  transform: translateX(-100%);
+}
+.team__items2 {
+  /* Tu dong an khi ra khoi the cha */
+  overflow: hidden;
+}
+
+.team__items2:hover .team__detail {
+  transform: translateX(0);
+}
+
+.team__items3:hover .team__detail{
+  opacity: 1;
+  transform: rotate(3600deg);
+}
+/* Thu phong */
+.team__items4 .team__detail{
+  transform: scale(0);
+}
+.team__items4:hover .team__detail {
+  transform: scale(1);
+}
+
+/* TES */
+
+.tes{
+  padding: 50px 0px;
+  background-image: url(../img/cc1.jpg);
+  height: 300px;
+  background-size: cover;
+}
+.tes_content{
+  /* canh vao giua */
+  border: 2px solid #FF0D83;
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+  padding: 20px;
+}
